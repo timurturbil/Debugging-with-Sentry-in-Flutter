@@ -1,12 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sentry_app/failMethods.dart';
 
-class HomePage extends StatefulWidget {
-  @override
-  _HomePageState createState() => _HomePageState();
-}
-
-class _HomePageState extends State<HomePage> {
+class HomePage extends StatelessWidget{
   final methods = Methods();
   @override
   Widget build(BuildContext context) {

@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:sentry_app/HomePage.dart';
 import 'package:sentry_flutter/sentry_flutter.dart';
 
-void main() async {
+Future<void> main() async {
   await SentryFlutter.init((options) {
     options.dsn =
-        'https://fb43a0383b7b4da2b82c86f87d000b91@o577277.ingest.sentry.io/5731982';
+        'https://c7891bff93b44e8e8e66e58ae348354f@o578421.ingest.sentry.io/5734638';
   }, appRunner: () => runApp(MyApp()));
 }
 

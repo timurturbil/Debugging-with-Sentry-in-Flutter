@@ -5,8 +5,7 @@ class Methods {
     try {
       int result = 12 ~/ 0;
       print("The result is $result");
-    } catch (exception, stackTrace) {
-      /* print(exception); */
+    } catch (exception,stackTrace) {
       await Sentry.captureException(
         exception,
         stackTrace: stackTrace,
@@ -14,16 +13,18 @@ class Methods {
     }
   }
 
-  Future<void> myFunction2() async {
+  Future<void> myFunction2()  async {
     try {
       final List myList = [];
       print(myList[1]);
-    } catch (exception, stackTrace) {
-      /* print("$exception  my exceptionn"); */
+    } catch (exception,stackTrace) {
       await Sentry.captureException(
         exception,
         stackTrace: stackTrace,
       );
+      
     }
   }
 }
+
+
